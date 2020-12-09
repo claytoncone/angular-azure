@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { MsalService } from '@azure/msal-angular';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
-const API_ENDPOINT = 'https://localhost:5001/WeatherForecast';
-
 @Component({
   selector: 'app-root',
   templateUrl:'app.component.html',
@@ -18,7 +16,7 @@ export class AppComponent {
     console.log('Api call');
     this.authService
     .acquireTokenSilent({
-      scopes: ['https://idmgr.onmicrosoft.com/api/read_data'],
+      scopes: ['https://CenturyLinkB2CTest.onmicrosoft.com/api/read_data'],
     })
     .then((result: any) => {
       console.log(result);

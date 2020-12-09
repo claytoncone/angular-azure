@@ -18,8 +18,8 @@ import {MsalModule} from '@azure/msal-angular'
     HttpClientModule,
     MsalModule.forRoot({
       auth:{
-        clientId:"380bcae5-7822-4b2c-a2c9-b686e25d10d2", // Application Id of Application registered in B2C
-        authority:"https://idmgr.b2clogin.com/idmgr.onmicrosoft.com/B2C_1_SignInSignUp", //signup-signin userflow
+        clientId:"bd469597-e556-4b31-aac9-0caf44e48db6", // Application Id of Application registered in B2C
+        authority:"https://CenturyLinkB2CTest.b2clogin.com/CenturyLinkB2CTest.onmicrosoft.com/B2C_1A_signup_signin_auth", //signup-signin userflow
         // https://idmgr.b2clogin.com/idmgr.onmicrosoft.com/<policy-name>/oauth2/v2.0/authorize
         //https://jitbox.b2clogin.com/jitbox.onmicrosoft.com/B2C_1_susi", //signup-signin userflow
         validateAuthority:false,
